@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/explab")
 //@CrossOrigin(origins = "http://localhost:4200")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://smofrontend.web.app")
 public class CExperiencia {
     @Autowired
     SExperiencia sExperiencia;
@@ -34,7 +34,7 @@ public class CExperiencia {
         return new ResponseEntity(list, HttpStatus.OK);
     }
     
- @GetMapping("/detail/{id}")
+    @GetMapping("/detail/{id}")
     public ResponseEntity<Experiencia> getById(@PathVariable("id") int id){
         if(!sExperiencia.existsById(id))
             return new ResponseEntity(new Mensaje("no existe"), HttpStatus.NOT_FOUND);
