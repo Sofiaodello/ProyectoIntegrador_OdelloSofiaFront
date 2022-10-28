@@ -24,6 +24,9 @@ import { EditSkillComponent } from './components/hys/edit-skill.component';
 import { NewSkillComponent } from './components/hys/new-skill.component';
 import { HysComponent } from './components/hys/hys.component';
 
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +36,6 @@ import { HysComponent } from './components/hys/hys.component';
     AcercaDeComponent,
     ExperienciaComponent,
     EducacionComponent,
-    HysComponent,
     ProyectoComponent,
     FooterComponent,
     HomeComponent,
@@ -44,7 +46,7 @@ import { HysComponent } from './components/hys/hys.component';
     EditeducacionComponent,
     EditSkillComponent,
     NewSkillComponent,
-  
+    HysComponent,
   ],
   imports: [
     BrowserModule,
