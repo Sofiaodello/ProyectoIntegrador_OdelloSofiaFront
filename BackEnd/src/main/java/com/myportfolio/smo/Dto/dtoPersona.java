@@ -5,6 +5,7 @@
 package com.myportfolio.smo.Dto;
 
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 
 /**
  *
@@ -20,6 +21,7 @@ public class dtoPersona {
     @NotBlank
     private String descripcion;
    @NotBlank
+   @Size(min = 1, max = 250, message = "no cumple con la longitud")
     private String img;
 
     public dtoPersona() {
