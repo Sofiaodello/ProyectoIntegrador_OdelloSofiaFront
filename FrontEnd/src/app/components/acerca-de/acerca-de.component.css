@@ -9,12 +9,15 @@ div{
 /*estilo foto portfolio*/
 @media (min-width: 990px) {
     #fotoportfolio {
-        position: absolute;
-        width: 15%;
+        
         border-radius: 100%;
         box-shadow: 3px 3px 3px grey;
-        left: 2%;
-        bottom: 23%;
+
+    }
+    .descripcion {
+        display:flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 

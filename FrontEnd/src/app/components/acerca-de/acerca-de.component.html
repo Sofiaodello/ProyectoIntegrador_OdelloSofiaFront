@@ -1,15 +1,22 @@
+<div>
+    <button type="button" class="btn btn-dark" routerLink="/editacercade/1" *ngIf="isLogged">
+    Editar persona
+    </button>
+</div>
+
 <div class="row prueba">
+
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2">
-<img src="../../../assets/CVfoto.png" class="img-fluid" id="fotoportfolio">
+<img src="{{persona.img}}" class="img-fluid" id="fotoportfolio">
     </div>
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2">
-    <p id="nombre"> Sofia Magali Cortez Odello </p>
+    <p id="nombre"> {{persona.nombre}} {{persona.apellido}}</p>
     <p> Full Stack Developer Jr</p>
 </div>
-<div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 descripcion">
     <span>
         <h1>Acerca de mi</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim ipsa numquam doloribus nam velit nesciunt libero dolor ducimus beatae, inventore repellat minus earum mollitia minima illo consequatur consequuntur obcaecati magni?</p>
+        <p>{{persona.descripcion}}</p>
     </span>
 </div>
 </div>
